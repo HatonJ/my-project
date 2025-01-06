@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>About Us Page</title>
+</head>
+<style>
+    #maindiv {
+        width: 100%;
+    }
+
+    #img1 {
+        background-image: url(images/design7jpg.jpeg);
+        width: 1500px;
+        height: 750px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        float: inline-start;
+    }
+
+    #bgtext {
+        background-color: rgba(212, 223, 212, 0.85);
+        margin-top: 350px;
+        width: 1400px;
+        height: 400px;
+        margin-left: 5px;
+        text-transform: uppercase;
+        font-size: 110px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border-top: 2px solid white;
+        border-top-right-radius: 150px;
+        color: rgb(39, 47, 39);
+        border-top-left-radius: 20px;
+        letter-spacing: 20px;
+        border-end-start-radius: 20px;
+    }
+
+    #us {
+        text-align: center;
+        font-size: 300px;
+        margin-top: -70px;
+        color: hsla(120, 33%, 30%, 0.6);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    #img2 {
+        background-image: url(images/design14.jpg);
+        margin: 80px;
+        border: green 2px double;
+        border-radius: 20px;
+        display: inline-block;
+        float: left;
+        width: 600px;
+        height: 700px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.6);
+
+    }
+
+    #text1 {
+        margin: 80px;
+        border: white 2px solid;
+        border-radius: 10px;
+        display: inline-block;
+        width: 600px;
+        height: 700px;
+        float: right;
+        margin-top: -780px;
+    }
+
+    .top {
+        font-size: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: capitalize;
+        margin: 20px;
+        margin-bottom: 50px;
+    }
+
+    .vip {
+        text-decoration: underline;
+        font-size: 60px;
+        margin-left: 20px;
+        color: hsla(120, 66%, 26%, 0.6);
+        text-transform: uppercase;
+    }
+
+    .vip2 {
+        letter-spacing: 2px;
+        font-size: 50px;
+    }
+
+    #tr1 {
+        font-size: 150px;
+        font-weight: bolder;
+        color: darkolivegreen;
+        text-transform: uppercase;
+        font-size: 60px;
+        background-color: rgba(222, 184, 135, 0.75);
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif, Geneva, Tahoma, sans-serif;
+    }
+
+
+
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    #product {
+        width: 1500px;
+        height: 100px;
+        background-color: hsla(120, 33%, 30%, 0.6);
+        font-size: 100px;
+        text-transform: capitalize;
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: hsla(0.9, 0%, 100%, 0.6);
+        border-radius: 20px;
+        text-shadow: 2px 2px 5px rgba(41, 37, 37, 0.6);
+        box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.6);
+        ;
+
+    }
+
+    .imgProuduct {
+        padding-top: 20px;
+        width: 1300px;
+        margin: auto;
+    }
+
+    .imgProuduct img {
+        width: 350px;
+        height: 350px;
+        padding-left: 20px;
+    }
+
+    .imgProuduct img:hover {
+        box-shadow: 2px 5px 10px rgba(39, 152, 2, 0.8);
+        width: 400px;
+    }
+
+    .footer {
+        width: 1200px;
+        height: 150px;
+        margin-top: 40px;
+        background-color: hsl(120, 66%, 26%);
+        margin-left: 100px;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .footerphoto {
+        width: 50px;
+        height: 40px;
+        border-radius: 5px;
+        margin-top: 30px;
+        margin-left: 20px;
+        float: left;
+        margin-right: 10px;
+    }
+
+    .earthdiv {
+        width: 130px;
+        font-size: 25px;
+        color: white;
+        font-weight: bolder;
+        text-transform: uppercase;
+        display: inline-block;
+        margin-left: 100px;
+        align-items: center;
+    }
+
+    .buttonDiv {
+        width: 350px;
+        height: 75px;
+        margin: auto;
+        margin-right: 650px;
+
+    }
+
+    .button {
+        width: 350px;
+        height: 50px;
+        background-color: hsla(120, 33%, 30%, 0.6);
+        font-size: 30px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-top: 20px;
+        box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.6);
+        text-shadow: 2px 2px 5px rgba(41, 37, 37, 0.6);
+letter-spacing: 2px;
+        font-weight: bold;
+    }
+    .button:hover{
+        background-color:hsla(120,100%,75%,0.3);
+        font-size: 40px;
+        width: 400px;
+        }
+</style>
+
+<body>
+    <!--main div-->
+    <div id="maindiv">
+        <div id="img1">
+            <!--div text-->
+            <div id="bgtext">
+                About <br>
+                <p id="us">us</p>
+            </div><img src="">
+        </div>
+
+        <!--group two Left-->
+        <div id="img2">
+            &nbsp;
+        </div>
+        <!--group two Right-->
+        <div id="text1">
+            <p class="top"> we are here to help you if you are need any
+            <p class="top vip">information of herb</p>
+            </p>
+            <p class="top vip2  ">Whether it is in the field of complementary medicine ,food ricipes,herbal products
+                or herbal medicine
+            </p>
+        </div>
+        <div class="clearfix"></div>
+        <!---product div-->
+        <div id="product">
+            our product
+        </div>
+        <!--photo of prouduct-->
+        <div class="imgProuduct">
+            <a href="##">
+                <img src="images/perfuem.jpg" alt="perfuem">
+            </a>
+            <a href="##">
+                <img src="images/oil.jpg" alt="body oil">
+            </a>
+            <a href="##">
+                <img src="images/body butter.jpg" alt="body butter">
+            </a>
+        </div>
+        <!--photo of prouduct Row2 -->
+        <div class="imgProuduct">
+            <a href="##">
+                <img src="images/body oil.jpg" alt="body oil">
+            </a>
+            <a href="##">
+                <img src="images/oil product.jpeg" alt="oil hair">
+            </a>
+            <a href="##">
+                <img src="images/prfuem2.jpeg" alt="perfuem">
+            </a>
+        </div>
+        <!--button div-->
+        <div class="buttonDiv">
+            <button class="button">Order Now</button>
+        </div>
+
+
+        <!--footer div-->
+        <div class="footer ">
+            <!--earth div -->
+            <div class="earthdiv">
+                <img src="images/earth.gif" class="footerphoto">
+                +100 countries
+            </div>
+            <!--web div -->
+            <div class="earthdiv">
+                <img src="images/web.gif" class="footerphoto">
+                +1000 uesers
+            </div>
+            <!--information div -->
+
+            <div class="earthdiv">
+                <img src="images/information.gif" class="footerphoto">
+                +3000 informations
+            </div>
+
+            <!--  Beneficiaries div -->
+
+            <div class="earthdiv">
+                <img src="images/beneficiaries.gif" class="footerphoto">
+                +2000 beneficiaries
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>

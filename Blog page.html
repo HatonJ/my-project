@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Blog page</title>
+</head>
+<style>
+    .mainDiv {
+        width: 1500px;
+    }
+
+    .leftDiv {
+        width: 970px;
+        float: left;
+    }
+
+    .rightDiv {
+        width: 470px;
+        height: 700px;
+        float: right;
+        margin-top: 20px;
+    }
+
+    #mainPhoto {
+        background-image: url(images/design11.jpg);
+        width: 970px;
+        height: 700px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    #textInPhoto {
+        color: white;
+        margin-left: 250px;
+        margin-top: 200px;
+        padding: 20px;
+        border: 2px rgba(35, 192, 11, 0.8) double;
+        border-radius: 20px;
+        width: 470px;
+        height: 250px;
+        position: absolute;
+        background-color: hsla(0, 3%, 55%, 0.9);
+        font-size: 25px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        text-shadow: 2px 2px 5px green;
+        text-transform: capitalize;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .explorebtn {
+        text-transform: none;
+        width: 150px;
+        color: white;
+        text-shadow: 2px 2px 5px green;
+        border: 3px rgba(35, 192, 11, 0.8) double;
+        margin-top: 50px;
+        margin: auto;
+        display: block;
+    }
+
+    .explorebtn:hover {
+        background-color: green;
+    }
+
+    .boxDiv {
+        width: 900px;
+        height: 350px;
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+
+    .imgINBox {
+        background-image: url(images/design15.jpg);
+        float: left;
+        width: 250px;
+        height: 400px;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+
+    }
+
+    .textINBox {
+
+        font-size: 25px;
+        float: right;
+        width: 640px;
+        height: 400px;
+        color: green;
+        text-shadow: 2px 2px 15px black;
+        text-transform: capitalize;
+    }
+
+    .textTitle {
+        font-size: 45px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-shadow: 2px 2px 5px green;
+        color: black;
+    }
+
+    .textTitle:hover {
+        background-image: url(images/camilia.jpg);
+        width: 600px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+    }
+
+    .imgINBox2 {
+        background-image: url(images/pill.jpg);
+        float: left;
+        width: 250px;
+        height: 400px;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+
+    }
+
+    .imgINBox3 {
+        background-image: url(images/product.jpg);
+        float: left;
+        width: 250px;
+        height: 400px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 20px;
+
+
+    }
+
+    .imgINBox4 {
+        background-image: url(images/Curcuma.jpg);
+        float: left;
+        width: 250px;
+        height: 400px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 80px;
+        margin-left: -250px;
+
+    }
+
+    #circleDiv1 {
+        width: 450px;
+        height: 200px;
+    }
+
+    #circleDiv {
+        background-image: url(images/design4.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        float: left;
+    }
+
+    .circleTextDiv {
+        font-size: 40px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-transform: capitalize;
+        font-weight: bolder;
+        color: hsla(145, 62%, 34%, 0.9);
+
+    }
+
+    #IbnSinaText {
+        font-size: 25px;
+        font-style: italic;
+
+    }
+
+    .circleTextDiv:hover {
+        background-color: hsla(0, 3%, 55%, 0.9);
+    }
+
+    .harmful {
+
+        height: 600px;
+        width: 500px;
+    }
+
+    .harmful button {
+        width: 400px;
+        height: 100px;
+        background-color: hsla(145, 62%, 34%, 0.9);
+        color: white;
+        font-size: 30px;
+        border-radius: 20px;
+        word-spacing: 5px;
+        border: 3px dashed rgb(0, 255, 34);
+        font-style: oblique;
+        text-shadow: 2px 2px 5px rgb(0, 255, 34);
+        text-transform: uppercase;
+    }
+    .harmful button:hover{
+        width: 500px;
+        cursor: pointer;
+    }
+    .BackDiv{
+        height: 550px;
+        width: 500px;
+        background-image: url(images/harmful\ photo.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .textHarmful{
+        height: 550px;
+        width: 500px;
+        background-color: hsla(132, 4%, 72%, 0.8);
+        background-size: contain;
+        font-size: 30px;
+        color: white;
+        text-shadow: 2px 2px 7px green;
+        text-transform: capitalize;
+        white-space: 3px;
+        font-style: italic;
+    }
+</style>
+
+<body>
+    <!--Main Div -->
+    <div class="mainDiv">
+
+        <!--Left Div -->
+        <div class="leftDiv">
+            <!--main photo in Left Div-->
+            <div id="mainPhoto">
+                <!--text in main photo-->
+                <div id="textInPhoto">
+                    In a world full of natural wonders, herbs take us on a unique journey, Join us in exploring the
+                    secrets of herbs<br>
+                    <a href="About Us Page.html" class="explorebtn">Explore Now </a>
+                </div>
+
+            </div>
+
+            <!--box Div one-->
+            <div class="boxDiv">
+                <!--img in box-->
+                <div class="imgINBox">
+
+
+                </div>
+                <!--text in box-->
+                <div class="textINBox">
+
+                    <p class="textTitle">What are the benefits of herbs</p>
+                    Natural herbs have many health benefits, They contain antioxidants such as polyphenols that help
+                    reduce inflammation and protect cells from damage.
+                    Some herbs such as mint and ginger also contribute to improving digestion and relieving nausea and
+                    vomiting, Herbs such as cloves and ginger can help relieve tooth and joint pain thanks to their
+                    anti-inflammatory properties.
+
+                </div>
+
+
+            </div>
+            <!--box Div two-->
+            <div class="boxDiv">
+                <!--img in box-->
+                <div class="imgINBox2">
+
+
+                </div>
+                <!--text in box-->
+                <div class="textINBox">
+
+                    <p class="textTitle">What are herbal medicines</p>
+                    Herbal medicine is an important part of traditional medicine and natural therapy,
+                    and has been used for thousands of years to treat a variety of diseases and health conditions,
+                    These drugs are based on the extraction of active compounds from herbs and their use in various
+                    therapeutic formulations
+
+                </div>
+            </div>
+
+            <!--box Div four-->
+            <div class="boxDiv">
+                <!--img in box-->
+                <div class="imgINBox3">
+
+
+                </div>
+                <!--text in box-->
+                <div class="textINBox">
+
+                    <p class="textTitle">The benefits of herbal products</p>
+                    Herbal products are considered healthy and natural alternatives to many traditional products,
+                    and are gaining increasing popularity thanks to their multiple benefits,
+                    These products rely on natural ingredients, which reduces the risk of exposure to harmful chemicals
+                    or side effects
+
+
+
+                </div>
+            </div>
+
+
+            <!--img in box-->
+            <div class="imgINBox4">
+
+
+            </div>
+            <!--text in box-->
+            <div class="textINBox">
+
+                <p class="textTitle">The most common herb</p>
+                In the last year, turmeric was one of the most popular herbs,
+                Turmeric is anti-inflammatory properties that make it useful in preventing many diseases,
+                including skin and skin diseases, arthritis, and even cancer,
+                It has also been used in Indian medicine for centuries and is considered one of the common natural
+                remedies in the world
+
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--Right Div -->
+    <div class="rightDiv">
+        <!--div continer-->
+        <div id="circleDiv1">
+            <!---circle photo div-->
+            <div id="circleDiv">
+
+            </div>
+
+            <!---circle text div-->
+            <div class="circleTextDiv">
+                ibn sina in herbal medicine
+
+            </div>
+        </div>
+        <!--Ibn Sina text-->
+        <div id="IbnSinaText">
+            He is one of the most famous Arab scientists who studied herbal medicine and wrote a book on this subject in
+            the name of
+            <p class="circleTextDiv"> the law in medicine</p>
+            which is one of the most famous medical books of Arab origin that talked about herbal medicine and natural
+            plants,
+            and his book was divided into two main parts, as he devoted part of it to talk about ancient and modern
+            medicines,
+            and pharmaceutical formulations with their benefits and harms to the human body,
+            and to facilitate searches in his book, each section was classified in a smooth and simplified way
+        </div>
+
+        <!--video div-->
+        <div class="video">
+            <video width="500px" height="900px" controls>
+                <source src="images/video herb.mp4" type="video/mp4">
+            </video>
+        </div>
+        <!--harmful of herb-->
+        <div class="harmful">
+            <button type="button" onclick="document.getElementById('demo').style.display='block'">What are the harms of herbs</button>
+          <!--background photo div-->
+          <div  class="BackDiv" id="demo" style="display: none;">
+<!--text in background -->
+<div class="textHarmful">
+     Although many herbs are considered safe and beneficial for use, 
+    some can be harmful if not used correctly.
+     For example, certain herbs may contain toxic substances that can cause poisoning, 
+     while others may interact poorly with medications a person is taking. 
+     Additionally, some herbs may cause severe allergic reactions in certain individuals.
+      Therefore, it's important to verify the safety of herbs and consult with professionals before using them.
+
+
+</div>
+
+          </div>
+           
+        </div>
+    </div>
+
+
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>
